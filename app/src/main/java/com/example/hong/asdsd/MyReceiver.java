@@ -1,5 +1,6 @@
 package com.example.hong.asdsd;
 
+import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -14,4 +15,5 @@ public class MyReceiver extends BroadcastReceiver {
         Toast.makeText(context, "this is receiver1", Toast.LENGTH_SHORT).show();
 
     }
+
 }

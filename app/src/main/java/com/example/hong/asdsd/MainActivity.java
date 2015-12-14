@@ -24,6 +24,7 @@ public class MainActivity extends Activity  {
     private TextView tv_main;
     private ImageButton ib_main;
 
+    MyReceiver receiver = new MyReceiver();
     MyReceiver2 receiver2 = new MyReceiver2();
 
     @Override
@@ -44,6 +45,7 @@ public class MainActivity extends Activity  {
     protected void onDestroy() {
         super.onDestroy();
         unregisterReceiver(receiver2);
+        unregisterReceiver(receiver);
     }
 
 
