@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main_icons"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#99999999">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_main_content"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:text="Ads contents"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/ll_main_points"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:onClick="turnOver"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片反转"/>
+    <ImageView
+        android:id="@+id/iv_main"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/b"/>
+
+</LinearLayout>

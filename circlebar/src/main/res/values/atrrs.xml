@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleBar_style">
+        <attr name="progress" format="integer"/>
+        <attr name="roundColor" format="color"/>
+    </declare-styleable>
+</resources>

@@ -45,7 +45,6 @@ public class MainActivity extends Activity  {
     protected void onDestroy() {
         super.onDestroy();
         unregisterReceiver(receiver2);
-        unregisterReceiver(receiver);
     }
 
 
@@ -61,9 +60,6 @@ public class MainActivity extends Activity  {
             }else{
                 Toast.makeText(context, "网络改变", Toast.LENGTH_SHORT).show();
             }
-
-
         }
     }
-
 }
